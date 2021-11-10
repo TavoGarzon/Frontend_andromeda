@@ -4,7 +4,7 @@ const callApi = async (url, options = {}) => {
     Accept: "application/json",
   };
 
-  const response = await fetch("https://git.heroku.com/blooming-scrubland-15594.git" + url, options);
+  const response = await fetch("https://blooming-scrubland-15594.herokuapp.com" + url, options);
   const data = await response.json();
   return data;
 };
